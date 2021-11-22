@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>See Something, Say Something</title>
+</head>
+<body>
+<h1 style="color:Tomato;">See Something, Say Something:<br>
+    Report Problems at school, Work, or Home</h1>
+<h2>What Did You See?</h2>
+<form action="/reports" method="post">
+    <input type="checkbox" id="problem1" name="problem1" value="Gun">
+    <label for="problem1"> I saw someone with a gun</label><br>
+    <input type="checkbox" id="problem2" name="problem2" value="Drugs">
+    <label for="problem2"> I saw someone with drugs</label><br>
+    <input type="checkbox" id="problem3" name="problem3" value="Bullying">
+    <label for="problem3"> I saw a bully or was bullied</label>
+<h2>Where did you see it?</h2>
+  <input type="radio" id="school" name="place" value="School">
+  <label for="school">School</label><br>
+  <div>
+    <label for="city">City:</label><br>
+    <input type="text" id="city" name="city"><br>
+    <label for="school">School Name(optional):</label><br>
+    <input type="text" id="school" name="school">
+  </div>
+  <input type="radio" id="work" name="place" value="Work">
+  <label for="work">Work</label><br>
+  <div>
+    <label for="city">City:</label><br>
+    <input type="text" id="city" name="city"><br>
+    <label for="workplace">Place of Business(optional):</label><br>
+    <input type="text" id="workplace" name="workplace">
+  </div>
+  <input type="submit" value="Submit" >
+</form> 
+<img src = "megaphone_man.jpg" alt = "Megaphone Man" style="width:50px;">
+
+</body>
+</html>

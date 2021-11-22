@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search for Problems</title>
+</head>
+<body>
+<h1 style="color:Tomato;">Search for a School or Workplace</h1>
+<div>
+    <h2>I want to search for...</h2>
+    <input type="radio" id="school" name="searchplace" value="School">
+    <label for="school">a School</label><br>
+    <input type="radio" id="work" name="searchplace" value="Work">
+    <label for="work">a Company/Workplace</label><br>
+    <label for="placename">Name of Place(School Name or Company Name):</label><br>
+    <input type="text" id="placename" name="placesearch"><br>
+    <button onclick="myFunction()">Submit</button>
+</div>
+<div id="report" style = "display: none;">
+    <p>Gun Reports: 13 (0 this week) <br>
+       Drug Reports: 5 (0 this week) <br>
+       Bully Reports: 27 (2 this week)
+
+    </p>
+</div>
+<script>
+function myFunction() {
+  var info = document.getElementById("report");
+  if (info.style.display === "none") {
+    info.style.display = "block";
+  } else {
+    info.style.display = "none";
+  }
+}
+</script>
+</body>
+</html>
